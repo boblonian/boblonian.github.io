@@ -11,6 +11,7 @@ body {
 	margin: 0;
 	padding: 0;
 	color: #000;
+	background-image: url();
 }
 
 /* ~~ Element/tag selectors ~~ */
@@ -22,6 +23,9 @@ h1, h2, h3, h4, h5, h6, p {
 	margin-top: 0;	 /* removing the top margin gets around an issue where margins can escape from their containing div. The remaining bottom margin will hold it away from any elements that follow. */
 	padding-right: 15px;
 	padding-left: 15px; /* adding the padding to the sides of the elements within the divs, instead of the divs themselves, gets rid of any box model math. A nested div with side padding can also be used as an alternate method. */
+	font-size: 100%;
+	color: #009;
+	font-weight: bold;
 }
 a img { /* this selector removes the default blue border displayed in some browsers around an image when it is surrounded by a link */
 	border: none;
@@ -120,13 +124,7 @@ ul.nav a:hover, ul.nav a:active, ul.nav a:focus { /* this changes the background
 	font-size: 1px;
 	line-height: 0px;
 }
-.content1 {padding: 10px 0;
-	width: 60%;
-	float: left;
-	font-family: Verdana, Arial, Helvetica, sans-serif;
-	text-align: center;
-}
-.container .content1 table tr td {
+.container .content table tr th {
 	font-size: 300%;
 	font-weight: bold;
 	font-style: italic;
@@ -142,49 +140,29 @@ ul.nav a { zoom: 1; }  /* the zoom property gives IE the hasLayout trigger it ne
 <body>
 
 <div class="container">
-  <div class="content1">
-    <table width="757" height="688" border="0">
+  <div class="content">
+    <table width="774" height="739" border="0">
       <tr>
-        <th height="27" scope="col">&nbsp;</th>
-        <th scope="col">&nbsp;</th>
-        <th scope="col">&nbsp;</th>
+        <th width="92" height="159" bgcolor="#FFFFFF" scope="col">&nbsp;</th>
+        <th width="546" scope="col">Vidi Tube</th>
+        <th width="114" scope="col">&nbsp;</th>
       </tr>
       <tr>
-        <th height="148" scope="row"><a href="index.html"><img src="Images/button (2).png" width="92" height="58" alt="Home" /></a></th>
-        <td align="center" valign="middle">Vidi Tube</td>
-        <td align="center"><img name="" src="" width="92" height="58" alt="" /></td>
-      </tr>
-      <tr>
-        <th height="84" scope="row"><a href="Children.html"><img src="Images/button.png" width="75" height="58" alt="Back" /></a></th>
-        <td align="center" valign="middle"><a href="CCA-Cartoons.html"><img src="Images/button_a - Copy - Copy.png" width="86" height="58" alt="A" /></a> <img src="Images/button_b - Copy - Copy.png" width="84" height="58" alt="B" /><img src="Images/button_c - Copy - Copy.png" width="81" height="58" alt="C" /><img src="Images/button_d (1).png" width="85" height="58" alt="D" /><img src="Images/button_e- Copy.png" width="82" height="58" alt="E" /></td>
+        <th height="428" scope="row"><p><a href="index.html"><img src="Images/button (2).png" width="92" height="58" alt="Home" /></a></p>
+          <p>&nbsp;</p>
+        <p><a href="C-C-Alphabet.html"><img src="Images/button.png" width="75" height="58" alt="Back" /></a></p></th>
+        <td align="center" valign="middle"><p>Angry Birds Compliation</p>          
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/lwF9r9jupz0" frameborder="10" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></td>
         <td>&nbsp;</td>
       </tr>
       <tr>
-        <th height="84" scope="row">&nbsp;</th>
-        <td align="center" valign="middle"><img src="Images/button_f - Copy.png" width="81" height="58" alt="F" /><img src="Images/button_g - Copy.png" width="83" height="58" alt="G" /><img src="Images/button_h (1).png" width="88" height="58" alt="H" /><img src="Images/button_i - Copy.png" width="72" height="58" alt="I" /><img src="Images/button_j.png" width="73" height="58" alt="J" /></td>
+        <th scope="row">&nbsp;</th>
         <td>&nbsp;</td>
-      </tr>
-      <tr>
-        <th height="84" scope="row">&nbsp;</th>
-        <td align="center" valign="middle"><img src="Images/button_k..png" width="87" height="58" alt="K" /><img src="Images/button_l.png" width="82" height="58" alt="L" /><img src="Images/button_m.png" width="97" height="58" alt="M" /><img src="Images/button_n.png" width="85" height="58" alt="N" /><img src="Images/button_o.png" width="86" height="58" alt="O" /></td>
         <td>&nbsp;</td>
-      </tr>
-      <tr>
-        <th height="183" rowspan="3" scope="row">&nbsp;</th>
-        <td height="76" align="center" valign="middle"><img src="Images/button_p.png" width="83" height="58" alt="P" /><img src="Images/button_q (1).png" width="88" height="58" alt="Q" /><img src="Images/button_r.png" width="85" height="58" alt="R" /><img src="Images/button_s.png" width="78" height="58" alt="S" /><img src="Images/button_t.png" width="86" height="58" alt="T" /></td>
-        <td rowspan="3">&nbsp;</td>
-      </tr>
-      <tr>
-        <td align="center" valign="middle"><img src="Images/button_u.png" width="85" height="58" alt="U" /><img src="Images/button_v (1).png" width="86" height="58" alt="V" /><img src="Images/button_x.png" width="86" height="58" alt="X" /><img src="Images/button_y (1).png" width="82" height="58" alt="Y" /><img src="Images/button_z.png" width="79" height="58" alt="Z" /></td>
-      </tr>
-      <tr>
-        <td align="center" valign="middle"><img src="Images/button (4).png" width="129" height="58" alt="1-0" /></td>
       </tr>
     </table>
-    <p>&nbsp;</p>
-    <!-- end .content -->
-  </div>
-  <!-- end .container -->
-</div>
+    <h1>&nbsp;</h1>
+    <!-- end .content --></div>
+<!-- end .container --></div>
 </body>
 </html>
